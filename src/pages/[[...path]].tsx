@@ -28,7 +28,7 @@ const SitecorePage = ({ notFound, componentProps, layoutData }: SitecorePageProp
     <ComponentPropsContext value={componentProps}>
       <SitecoreContext componentFactory={componentFactory} layoutData={layoutData}>
         <div>
-          <Button onClick={() => signOut}>Sign Out</Button>
+          <Button onClick={() => signOut()}>Sign Out</Button>
         </div>
         <Layout layoutData={layoutData} />
       </SitecoreContext>
